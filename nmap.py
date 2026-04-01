@@ -10,14 +10,14 @@ def scan(host, port):
 	s.close()
 	return ret
 
-#	if result == 0:
-#		sys.stdout.write("\n")
-#		print(f"port {port} open")
-#	elif IWANTALLPORTS: #if you want all ports. self-explanatory. 
-#		if result == 111:
-#			print(f"port {port} closed")
-#		else:
-#			print(f"port {port} filtered (code {result})")
+	if result == 0:
+		sys.stdout.write("\n")
+		print(f"port {port} open")
+	elif IWANTALLPORTS: #if you want all ports. self-explanatory. 
+		if result == 111:
+			print(f"port {port} closed")
+		else:
+			print(f"port {port} filtered (code {result})")
 
 
 
